@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ISSIS</title>
+        <script src="script/jquery-1.11.1.min.js"></script>
+        <script src="script/jquery.cycle.all.js"></script>
+        <script type="text/javascript">
+            $('#slider').cycle({
+                fx: 'scrollHorz',
+                speed: 'slow',
+                next: '#next',
+                prev: '#prev'
+            });
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+        <link href="newcss.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            #prev{
+                background-image: url(images/arrow-prev.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: block;
+                float: left;
+                height: 375px;
+                width: 100px;
+                position: relative;
+                z-index: 99;
+            }
+
+            #next{
+                background-image: url(images/arrow-next.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: block;
+                float: right;
+                height: 375px;
+                width: 200px;
+                position: relative;
+                z-index: 99;
+            }
+
+            #slider{
+                display: block;
+                float: left;
+                height: 375px;
+                width: 1200px;
+                overflow: hidden;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="templatemo_site_title_bar_wrapper">
+            <div id="templatemo_site_title_bar">
+                <div id="site_title">
+                    <img src="images/10x3.png" width="260" height="65"></img> 
+                </div>
+
+                <div id="site_title_bar_right_section">
+
+                    <div id="templatemo_menu">
+                        <ul>
+                            <li><a href="W01_HOME.jsp"><span></span>HOME</a></li>
+                            <li><a href="W02_LOGIN_MABA.jsp"><span></span>MAHASISWA</a></li>
+                            <li><a href="W03_LOGIN_PANITIA.jsp"><span></span>PANITIA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="templatemo_banner_wrapper">
+
+            <div id="templatemo_banner">
+                <h2><span>Pinissi</span></h2>
+                <p>adalah suatu kegiatan yang diadakan satu tahun sekali oleh Fakultas Sains dan 
+                    Teknologi Universitas Sanata Dharma Yogyakarta yang bertujuan 
+                    untuk menginisiasi khususnya mahasiswa baru Fakultas Sains dan Teknologi.</p>
+                <div class="controller" id="next"></div>
+                <div id="slider" >
+                    <img src="images/gambar1.png" width="1200" height="375"></img>
+                    <img src="images/gambar2.png" width="1200" height="375"></img>
+                    <img src="images/gambar3.png" width="1200" height="375"></img>
+                    <img src="images/gambar4.png" width="1200" height="375"></img>
+                    <img src="images/gambar5.png" width="1200" height="375"></img>
+                </div>
+                <div class="controller" id="prev"></div>
+            </div> <!-- end of templatemo_banner -->
+
+        </div> <!-- end of templatemo_banner_wrapper -->
+
+
+    </body>
+</html>
